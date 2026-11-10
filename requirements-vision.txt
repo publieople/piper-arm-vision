@@ -1,0 +1,7 @@
+# 拍照环境（Python 3.11）：/home/po/vision-env
+# pyorbbecsdk 不在 PyPI 可用（wheel 是 macOS 二进制），需源码编译：
+#   git clone -b main https://github.com/orbbec/pyorbbecsdk
+#   见 docs/PIPER_抓取全流程.md 的「环境」一节
+numpy==1.26.4
+opencv-python-headless==4.11.0.86
+pybind11>=2.11

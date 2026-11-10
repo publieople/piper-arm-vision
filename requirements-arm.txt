@@ -1,0 +1,6 @@
+# 动臂环境（Python 3.13）：/home/po/arm-env
+pyAgxArm @ git+https://github.com/agilexrobotics/pyAgxArm.git
+python-can>=4.4
+opencv-python-headless==4.12.0.88
+numpy>=2.0
+pybullet>=3.2.7

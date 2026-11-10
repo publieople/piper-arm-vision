@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# 运行产物 / 数据（不入库）
+out/
+calib/
+act_data/
+act_train/
+Log/
+*.npz
+*.npy
+*.mp4
+*.avi
+*.csv
+*.log
+
+# 上游源码与模型（按 scripts/setup_urdf.sh / 文档获取）
+pyorbbecsdk/
+agx_arm_urdf/
+
+# 本地历史调试脚本
+_*.py
+attic/
+
+# 编辑器
+.DS_Store
+.idea/
+.vscode/
+
+# 渲染中间产物
+*.html
+README.pdf

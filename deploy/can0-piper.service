@@ -1,0 +1,15 @@
+[Unit]
+Description=Configure PiPER CAN interface can0 at 1 Mbps
+BindsTo=sys-subsystem-net-devices-can0.device
+After=sys-subsystem-net-devices-can0.device
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=-/usr/bin/ip link set can0 down
+ExecStart=/usr/bin/ip link set can0 type can bitrate 1000000
+ExecStart=/usr/bin/ip link set can0 up
+ExecStop=/usr/bin/ip link set can0 down
+
+[Install]
+WantedBy=multi-user.target
