@@ -35,4 +35,4 @@ for name in ("piper_description.urdf", "piper_with_gripper.urdf"):
     bad = [l for l in p.read_text().splitlines() if "__URDF_MESH_ROOT__" in l]
     print(f"    {name}: {'OK' if not bad else 'STILL TEMPLATED'}")
 PY
-echo ">> 之后运行：python tools/simselfcheck.py 或 kin.py 直接可用"
+echo ">> 之后 kin.py / simpath.py 直接可用"
